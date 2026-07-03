@@ -15,15 +15,17 @@ live site, treating every target as black-box.
 These are **end-to-end / functional / smoke tests**, not unit tests — unit tests
 require source access, and this tool never has that.
 
-**Full documentation:** https://khushaljethava.github.io/Anjalikastra/ (built
+**Full documentation:** https://khushaljethava.work/Anjalikastra/ (built
 from [`docs/`](docs/) — deploys automatically from `main`).
 
 ## Install
 
 ```bash
-pip install -e .
+pip install anjalikastra
 playwright install --with-deps chromium   # for the tool's own crawler/endpoint capture
 ```
+
+Or from source (see [Developing this tool](#developing-this-tool)).
 
 Configure an LLM for full-quality classification and generation: set
 `ANTHROPIC_API_KEY` for Claude, or `OPENAI_API_KEY`/`OPENAI_BASE_URL` for any
