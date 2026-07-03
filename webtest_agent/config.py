@@ -24,10 +24,10 @@ class Config:
     # Models (cheap for classification/summaries, capable for generation/triage).
     # Defaults can be overridden by env vars or the --cheap-model/--capable-model CLI flags.
     cheap_model: str = field(default_factory=lambda: os.environ.get("WEBTEST_AGENT_CHEAP_MODEL", "claude-haiku-4-5-20251001"))
-    capable_model: str = field(default_factory=lambda: os.environ.get("WEBTEST_AGENT_CAPABLE_MODEL", "claude-sonnet-5"))
+    capable_model: str = field(default_factory=lambda: os.environ.get("ANJALIKASTRA_CAPABLE_MODEL", "claude-sonnet-5"))
     # "anthropic", "openai" (any OpenAI-compatible endpoint: OpenAI, Ollama,
     # OpenRouter, Gemini, vLLM, ...), or None to auto-detect from credentials.
-    llm_provider: str | None = field(default_factory=lambda: os.environ.get("WEBTEST_AGENT_LLM_PROVIDER") or None)
+    llm_provider: str | None = field(default_factory=lambda: os.environ.get("ANJALIKASTRA_LLM_PROVIDER") or None)
     llm_max_retries: int = 2
 
     # Generation
@@ -71,4 +71,4 @@ class Config:
     def chromium_executable_path(self) -> str | None:
         """Optional override for environments with a pre-installed Chromium binary
         (offline installs, CI images) instead of one downloaded by `playwright install`."""
-        return os.environ.get("WEBTEST_AGENT_CHROMIUM_PATH") or None
+        return os.environ.get("ANJALIKASTRA_CHROMIUM_PATH") or None

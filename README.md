@@ -132,8 +132,8 @@ The tool splits LLM work across two tiers, each independently configurable:
 
 | Tier | Used for | Default | Override |
 |---|---|---|---|
-| cheap | page/endpoint classification, routine summaries | `claude-haiku-4-5-20251001` | `--cheap-model` flag or `WEBTEST_AGENT_CHEAP_MODEL` env var |
-| capable | test generation, failure triage | `claude-sonnet-5` | `--capable-model` flag or `WEBTEST_AGENT_CAPABLE_MODEL` env var |
+| cheap | page/endpoint classification, routine summaries | `claude-haiku-4-5-20251001` | `--cheap-model` flag or `ANJALIKASTRA_CHEAP_MODEL` env var |
+| capable | test generation, failure triage | `claude-sonnet-5` | `--capable-model` flag or `ANJALIKASTRA_CAPABLE_MODEL` env var |
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...
@@ -148,7 +148,7 @@ CLI flags take precedence over env vars; env vars take precedence over the defau
 ### Supported providers
 
 Two backends are supported natively, selected with `--llm-provider` (or
-`WEBTEST_AGENT_LLM_PROVIDER`), and auto-detected from your credentials if you
+`ANJALIKASTRA_LLM_PROVIDER`), and auto-detected from your credentials if you
 don't specify one:
 
 | Provider | Covers | Credentials |

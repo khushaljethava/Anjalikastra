@@ -34,12 +34,12 @@ def main(
         None, "--cheap-model", help="Model for classification/summaries (default: env WEBTEST_AGENT_CHEAP_MODEL or claude-haiku-4-5-20251001)."
     ),
     capable_model: Optional[str] = typer.Option(
-        None, "--capable-model", help="Model for test generation/triage (default: env WEBTEST_AGENT_CAPABLE_MODEL or claude-sonnet-5)."
+        None, "--capable-model", help="Model for test generation/triage (default: env ANJALIKASTRA_CAPABLE_MODEL or claude-sonnet-5)."
     ),
     llm_provider: Optional[str] = typer.Option(
         None, "--llm-provider",
         help="LLM backend: 'anthropic' or 'openai' (any OpenAI-compatible endpoint: OpenAI, Ollama, OpenRouter, Gemini, ...). "
-        "Default: env WEBTEST_AGENT_LLM_PROVIDER, else auto-detected from which API keys are set.",
+        "Default: env ANJALIKASTRA_LLM_PROVIDER, else auto-detected from which API keys are set.",
     ),
     verbose: bool = typer.Option(False, "--verbose", "-v", help="Verbose logging."),
 ) -> None:
