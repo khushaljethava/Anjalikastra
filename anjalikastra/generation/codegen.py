@@ -16,11 +16,11 @@ import logging
 from dataclasses import dataclass
 from urllib.parse import urlparse
 
-from webtest_agent.generation.assertions import EndpointAssertions, PageAssertions, slugify
-from webtest_agent.generation.review_gate import ReviewResult, review_file
-from webtest_agent.llm.client import LLMClient, LLMUnavailable
+from anjalikastra.generation.assertions import EndpointAssertions, PageAssertions, slugify
+from anjalikastra.generation.review_gate import ReviewResult, review_file
+from anjalikastra.llm.client import LLMClient, LLMUnavailable
 
-logger = logging.getLogger("webtest_agent.generation.codegen")
+logger = logging.getLogger("anjalikastra.generation.codegen")
 
 
 @dataclass

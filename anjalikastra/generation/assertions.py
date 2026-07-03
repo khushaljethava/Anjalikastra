@@ -12,9 +12,9 @@ from dataclasses import dataclass, field
 
 from bs4 import BeautifulSoup
 
-from webtest_agent.analysis.classify import EndpointClassification, PageClassification
-from webtest_agent.discovery.crawler import PageRecord
-from webtest_agent.discovery.endpoints import EndpointRecord
+from anjalikastra.analysis.classify import EndpointClassification, PageClassification
+from anjalikastra.discovery.crawler import PageRecord
+from anjalikastra.discovery.endpoints import EndpointRecord
 
 
 @dataclass

@@ -19,7 +19,7 @@ from urllib.parse import urldefrag, urljoin, urlparse
 import httpx
 from bs4 import BeautifulSoup
 
-logger = logging.getLogger("webtest_agent.discovery.crawler")
+logger = logging.getLogger("anjalikastra.discovery.crawler")
 
 _SKIP_EXTENSIONS = (
     ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".ico",
@@ -109,7 +109,7 @@ class Robots:
             logger.debug("robots.txt fetch failed: %s — allowing all by default", exc)
             self._parser = None
 
-    def allowed(self, url: str, user_agent: str = "webtest-agent") -> bool:
+    def allowed(self, url: str, user_agent: str = "Anjalikastra") -> bool:
         if not self._enabled or self._parser is None:
             return True
         return self._parser.can_fetch(user_agent, url)

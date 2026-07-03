@@ -1,14 +1,14 @@
 from rich.console import Console
 
-from webtest_agent.checkpoint import Checkpoint
-from webtest_agent.config import Config
-from webtest_agent.discovery.crawler import crawl
-from webtest_agent.discovery.sitemap import fetch_sitemap_urls
+from anjalikastra.checkpoint import Checkpoint
+from anjalikastra.config import Config
+from anjalikastra.discovery.crawler import crawl
+from anjalikastra.discovery.sitemap import fetch_sitemap_urls
 import httpx
 import os
 import pytest
 
-from webtest_agent.orchestrator import run_pipeline
+from anjalikastra.orchestrator import run_pipeline
 
 _CHROMIUM = os.environ.get("WEBTEST_AGENT_CHROMIUM_PATH")
 pytestmark = pytest.mark.skipif(not _CHROMIUM, reason="set WEBTEST_AGENT_CHROMIUM_PATH to run resume tests")

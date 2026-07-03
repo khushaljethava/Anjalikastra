@@ -3,11 +3,11 @@
 ## The crawler reaches zero pages. What's wrong?
 
 Most often the site's bot protection (Cloudflare, WAF rules, ...) is blocking
-the crawler. webtest-agent **never attempts to evade bot detection** — the
+the crawler. Anjalikastra **never attempts to evade bot detection** — the
 supported fix is to allowlist the tool's User-Agent on your own infrastructure:
 
 ```
-webtest-agent/0.1 (+https://github.com/webtest-agent/webtest-agent)
+Anjalikastra/0.1 (+https://github.com/Anjalikastra/Anjalikastra)
 ```
 
 The CLI prints this exact guidance when a crawl comes back empty.
@@ -18,12 +18,12 @@ v1 crawls **public pages only**. Auth-gated areas show up in the coverage
 report as *not reached* — deliberately, because silently skipping them (or
 pretending they passed) would be worse than saying "not covered."
 Authenticated crawling via stored session state or a scripted login step is the
-designed v2 feature; see `webtest_agent/discovery/auth.py`.
+designed v2 feature; see `anjalikastra/discovery/auth.py`.
 
 ## Are these unit tests?
 
 No — and the tool never calls them that. Unit tests require source access.
-webtest-agent produces **end-to-end / functional / smoke tests** that drive a
+Anjalikastra produces **end-to-end / functional / smoke tests** that drive a
 real browser against the live site.
 
 ## Do I need an LLM API key?
@@ -40,7 +40,7 @@ failure triage.
 Maybe. Triage classifies each failure as regression / flake / expected-change /
 needs-human-review, with a confidence score and reasoning in the report. A site
 that changed since generation commonly produces *expected-change* failures —
-re-run webtest-agent to regenerate against the current site, or just edit the
+re-run Anjalikastra to regenerate against the current site, or just edit the
 test (it's plain Playwright).
 
 ## Can I run this against a site I don't own?

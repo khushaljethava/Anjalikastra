@@ -23,14 +23,14 @@ Always start with a dry run — it prints exactly what the tool *would* do
 network request to the target:
 
 ```bash
-webtest-agent https://your-site.example --dry-run
+Anjalikastra https://your-site.example --dry-run
 ```
 
 Then run for real:
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...   # or see LLM Providers for alternatives
-webtest-agent https://your-site.example
+Anjalikastra https://your-site.example
 ```
 
 A run works through discovery → classification → generation → execution →
@@ -62,12 +62,12 @@ BASE_URL=https://staging.your-site.example npm test
 
 ## Testing your own site
 
-webtest-agent is built for testing **sites you own or are authorized to test**:
+Anjalikastra is built for testing **sites you own or are authorized to test**:
 
 - Requests are throttled (default 500 ms between requests) and `robots.txt` is
   respected, so a run behaves like a polite crawler, not a load test.
 - If your site's bot protection blocks the crawler, the fix is to **allowlist
-  the tool's User-Agent** (`webtest-agent/0.1 ...`) on your own infrastructure.
+  the tool's User-Agent** (`Anjalikastra/0.1 ...`) on your own infrastructure.
   The tool will never try to evade detection.
 
 Next: the full [CLI Reference](cli.md).

@@ -1,4 +1,4 @@
-"""`webtest-agent <url> [flags]` — entrypoint."""
+"""`Anjalikastra <url> [flags]` — entrypoint."""
 
 from __future__ import annotations
 
@@ -11,8 +11,8 @@ import typer
 from rich.console import Console
 from rich.table import Table
 
-from webtest_agent.config import Config
-from webtest_agent.orchestrator import run_pipeline
+from anjalikastra.config import Config
+from anjalikastra.orchestrator import run_pipeline
 
 app = typer.Typer(add_completion=False, no_args_is_help=True)
 console = Console()
@@ -111,7 +111,7 @@ def main(
 
 
 def _print_plan(cfg: Config, provider: str | None) -> None:
-    table = Table(title=f"webtest-agent plan for {cfg.url}", show_header=False)
+    table = Table(title=f"Anjalikastra plan for {cfg.url}", show_header=False)
     table.add_row("run id", cfg.run_id)
     table.add_row("output dir", str(cfg.run_dir))
     table.add_row("max pages", str(cfg.max_pages))

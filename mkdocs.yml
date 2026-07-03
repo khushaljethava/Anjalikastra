@@ -1,4 +1,4 @@
-site_name: webtest-agent
+site_name: Anjalikastra
 site_description: Autonomous web testing agent — point it at a URL, get a runnable Playwright E2E suite and an honest coverage report.
 site_url: https://khushaljethava.github.io/Anjalikastra/
 repo_url: https://github.com/khushaljethava/Anjalikastra

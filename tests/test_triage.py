@@ -1,6 +1,6 @@
-from webtest_agent.execution.runner import TestResult
-from webtest_agent.llm.client import LLMClient
-from webtest_agent.triage.classify_failures import triage_failure
+from anjalikastra.execution.runner import TestResult
+from anjalikastra.llm.client import LLMClient
+from anjalikastra.triage.classify_failures import triage_failure
 
 
 async def test_triage_defaults_to_needs_human_review_when_uncertain():

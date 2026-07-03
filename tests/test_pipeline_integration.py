@@ -13,10 +13,10 @@ import os
 import pytest
 from rich.console import Console
 
-from webtest_agent.cache.store import CacheStore
-from webtest_agent.config import Config
-from webtest_agent.execution.baseline import BaselineStore
-from webtest_agent.orchestrator import run_pipeline
+from anjalikastra.cache.store import CacheStore
+from anjalikastra.config import Config
+from anjalikastra.execution.baseline import BaselineStore
+from anjalikastra.orchestrator import run_pipeline
 
 _CHROMIUM = os.environ.get("WEBTEST_AGENT_CHROMIUM_PATH")
 pytestmark = pytest.mark.skipif(not _CHROMIUM, reason="set WEBTEST_AGENT_CHROMIUM_PATH to run pipeline integration tests")

@@ -12,7 +12,7 @@ from xml.etree import ElementTree
 
 import httpx
 
-logger = logging.getLogger("webtest_agent.discovery.sitemap")
+logger = logging.getLogger("anjalikastra.discovery.sitemap")
 
 _NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 _COMMON_PATHS = ("/sitemap.xml", "/sitemap_index.xml")

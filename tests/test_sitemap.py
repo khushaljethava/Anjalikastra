@@ -1,6 +1,6 @@
 import httpx
 
-from webtest_agent.discovery.sitemap import fetch_sitemap_urls
+from anjalikastra.discovery.sitemap import fetch_sitemap_urls
 
 
 async def test_sitemap_parses_seed_urls(fixture_site):

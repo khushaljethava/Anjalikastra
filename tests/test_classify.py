@@ -1,8 +1,8 @@
-from webtest_agent.analysis.classify import classify_endpoint, classify_page
-from webtest_agent.cache.store import CacheStore
-from webtest_agent.discovery.crawler import PageRecord
-from webtest_agent.discovery.endpoints import EndpointRecord
-from webtest_agent.llm.client import LLMClient
+from anjalikastra.analysis.classify import classify_endpoint, classify_page
+from anjalikastra.cache.store import CacheStore
+from anjalikastra.discovery.crawler import PageRecord
+from anjalikastra.discovery.endpoints import EndpointRecord
+from anjalikastra.llm.client import LLMClient
 
 
 async def test_classify_page_heuristic_login(tmp_path):

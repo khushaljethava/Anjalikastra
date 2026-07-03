@@ -14,7 +14,7 @@ _PAGES: dict[str, str] = {
     "/": """<html><head><title>Fixture Home</title></head><body>
         <nav><a href="/">Home</a><a href="/about">About</a><a href="/login">Login</a><a href="/products">Products</a></nav>
         <h1>Welcome to the fixture site</h1>
-        <p>This is a small site used to test webtest-agent.</p>
+        <p>This is a small site used to test Anjalikastra.</p>
     </body></html>""",
     "/about": """<html><head><title>About</title></head><body>
         <nav><a href="/">Home</a></nav>

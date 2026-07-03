@@ -14,7 +14,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-logger = logging.getLogger("webtest_agent.cache")
+logger = logging.getLogger("anjalikastra.cache")
 
 
 def content_hash(text: str) -> str:

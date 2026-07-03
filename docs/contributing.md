@@ -35,7 +35,7 @@ Python 3.10 and 3.12.
 ## Project layout
 
 ```
-webtest_agent/
+anjalikastra/
 ├── cli.py                # entrypoint & argument validation
 ├── config.py             # every tunable, centralized
 ├── orchestrator.py       # wires the pipeline stages together

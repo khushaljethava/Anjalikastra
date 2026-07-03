@@ -1,11 +1,11 @@
-from webtest_agent.generation.assertions import EndpointAssertions, FormInfo, PageAssertions
-from webtest_agent.generation.codegen import (
+from anjalikastra.generation.assertions import EndpointAssertions, FormInfo, PageAssertions
+from anjalikastra.generation.codegen import (
     generate_endpoint_files,
     generate_page_file,
     generate_page_spec_deterministic,
 )
-from webtest_agent.generation.review_gate import review_file
-from webtest_agent.llm.client import LLMClient
+from anjalikastra.generation.review_gate import review_file
+from anjalikastra.llm.client import LLMClient
 
 
 def _page_assertions(**overrides) -> PageAssertions:

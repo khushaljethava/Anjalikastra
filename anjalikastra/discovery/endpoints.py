@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 
 from playwright.async_api import Browser, Request, Response
 
-logger = logging.getLogger("webtest_agent.discovery.endpoints")
+logger = logging.getLogger("anjalikastra.discovery.endpoints")
 
 _ID_SEGMENT = re.compile(
     r"^([0-9]+|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{24})$"

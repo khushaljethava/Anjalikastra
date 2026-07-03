@@ -31,7 +31,7 @@ When it completes, its results are checkpointed to
 If the run crashes or is interrupted afterwards, resume it:
 
 ```bash
-webtest-agent https://your-site.example --resume <run-id>
+Anjalikastra https://your-site.example --resume <run-id>
 ```
 
 The resumed run reuses the checkpointed crawl and endpoint data — **zero new

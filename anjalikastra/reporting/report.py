@@ -12,12 +12,12 @@ import json
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
-from webtest_agent.cache.store import CacheStats
-from webtest_agent.execution.runner import RunReport
-from webtest_agent.generation.codegen import GeneratedFile
-from webtest_agent.llm.client import TokenLedger
-from webtest_agent.reporting.coverage import CoverageSummary
-from webtest_agent.triage.classify_failures import DraftBug
+from anjalikastra.cache.store import CacheStats
+from anjalikastra.execution.runner import RunReport
+from anjalikastra.generation.codegen import GeneratedFile
+from anjalikastra.llm.client import TokenLedger
+from anjalikastra.reporting.coverage import CoverageSummary
+from anjalikastra.triage.classify_failures import DraftBug
 
 
 @dataclass
@@ -90,7 +90,7 @@ def _to_json(data: ReportData) -> dict:
 def _render_markdown(data: ReportData) -> str:
     cov = data.coverage
     lines: list[str] = []
-    lines.append(f"# webtest-agent report — {data.url}")
+    lines.append(f"# Anjalikastra report — {data.url}")
     lines.append("")
     lines.append(f"Generated: {data.generated_at}  \nRun ID: `{data.run_id}`")
     lines.append("")

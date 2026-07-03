@@ -1,4 +1,4 @@
-from webtest_agent.discovery.endpoints import EndpointRecord, _path_pattern, merge_endpoints
+from anjalikastra.discovery.endpoints import EndpointRecord, _path_pattern, merge_endpoints
 
 
 def test_path_pattern_collapses_numeric_ids():

@@ -12,12 +12,12 @@ import logging
 import re
 from dataclasses import dataclass
 
-from webtest_agent.cache.store import CacheStore, content_hash
-from webtest_agent.discovery.crawler import PageRecord
-from webtest_agent.discovery.endpoints import EndpointRecord
-from webtest_agent.llm.client import LLMClient, LLMUnavailable
+from anjalikastra.cache.store import CacheStore, content_hash
+from anjalikastra.discovery.crawler import PageRecord
+from anjalikastra.discovery.endpoints import EndpointRecord
+from anjalikastra.llm.client import LLMClient, LLMUnavailable
 
-logger = logging.getLogger("webtest_agent.analysis.classify")
+logger = logging.getLogger("anjalikastra.analysis.classify")
 
 PAGE_TYPES = [
     "home", "login", "signup", "listing", "detail", "checkout", "form",

@@ -3,8 +3,8 @@ import time
 import httpx
 import pytest
 
-from webtest_agent.discovery.crawler import Throttle, _normalize, crawl
-from webtest_agent.discovery.sitemap import fetch_sitemap_urls
+from anjalikastra.discovery.crawler import Throttle, _normalize, crawl
+from anjalikastra.discovery.sitemap import fetch_sitemap_urls
 
 
 def test_normalize_dedupes_root_with_and_without_trailing_slash():

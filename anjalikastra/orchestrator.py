@@ -15,29 +15,29 @@ import httpx
 from playwright.async_api import async_playwright
 from rich.console import Console
 
-from webtest_agent.analysis.classify import classify_endpoint, classify_page
-from webtest_agent.cache.store import CacheStore
-from webtest_agent.checkpoint import Checkpoint
-from webtest_agent.config import Config
-from webtest_agent.discovery.crawler import CrawlResult, Throttle, crawl
-from webtest_agent.discovery.endpoints import (
+from anjalikastra.analysis.classify import classify_endpoint, classify_page
+from anjalikastra.cache.store import CacheStore
+from anjalikastra.checkpoint import Checkpoint
+from anjalikastra.config import Config
+from anjalikastra.discovery.crawler import CrawlResult, Throttle, crawl
+from anjalikastra.discovery.endpoints import (
     EndpointRecord,
     capture_endpoints_for_pages,
     load_openapi_endpoints,
     merge_endpoints,
 )
-from webtest_agent.discovery.sitemap import fetch_sitemap_urls
-from webtest_agent.execution.baseline import BaselineStore
-from webtest_agent.execution.runner import RunnerError, install_suite, run_suite
-from webtest_agent.generation.assertions import PageAssertions, infer_endpoint_assertions, infer_page_assertions
-from webtest_agent.generation.codegen import GeneratedFile, generate_endpoint_files, generate_page_files
-from webtest_agent.generation.templates.scaffold import render_package_json, render_playwright_config, render_readme
-from webtest_agent.llm.client import LLMClient, TokenLedger
-from webtest_agent.reporting.coverage import CoverageSummary, build_coverage
-from webtest_agent.reporting.report import build_report_data, write_reports
-from webtest_agent.triage.classify_failures import DraftBug, triage_failure
+from anjalikastra.discovery.sitemap import fetch_sitemap_urls
+from anjalikastra.execution.baseline import BaselineStore
+from anjalikastra.execution.runner import RunnerError, install_suite, run_suite
+from anjalikastra.generation.assertions import PageAssertions, infer_endpoint_assertions, infer_page_assertions
+from anjalikastra.generation.codegen import GeneratedFile, generate_endpoint_files, generate_page_files
+from anjalikastra.generation.templates.scaffold import render_package_json, render_playwright_config, render_readme
+from anjalikastra.llm.client import LLMClient, TokenLedger
+from anjalikastra.reporting.coverage import CoverageSummary, build_coverage
+from anjalikastra.reporting.report import build_report_data, write_reports
+from anjalikastra.triage.classify_failures import DraftBug, triage_failure
 
-logger = logging.getLogger("webtest_agent.orchestrator")
+logger = logging.getLogger("anjalikastra.orchestrator")
 
 
 def _write_suite(cfg: Config, generated_files: list[GeneratedFile]) -> None:
@@ -188,7 +188,7 @@ async def run_pipeline(cfg: Config, console: Console) -> int:
         if not reachable:
             console.print(
                 "[red]The crawler could not reach any pages.[/red] This often means the site's bot "
-                "protection is blocking the crawler. webtest-agent does not attempt to evade bot "
+                "protection is blocking the crawler. Anjalikastra does not attempt to evade bot "
                 f"detection — instead, allowlist this tool's User-Agent on your own site:\n"
                 f"  [bold]{cfg.user_agent}[/bold]"
             )
@@ -237,7 +237,7 @@ async def run_pipeline(cfg: Config, console: Console) -> int:
         logger.exception("pipeline failed")
         notes.append(f"Run failed before completing: {exc}. Resume with `--resume {cfg.run_id}`.")
         console.print(f"[red]error:[/red] {exc}")
-        console.print(f"Partial state saved. Resume with: webtest-agent {cfg.url} --resume {cfg.run_id}")
+        console.print(f"Partial state saved. Resume with: Anjalikastra {cfg.url} --resume {cfg.run_id}")
 
     cache.flush()
     report_data = build_report_data(

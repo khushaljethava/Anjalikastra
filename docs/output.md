@@ -113,5 +113,5 @@ test.describe('login: /login', () => {
 ```
 
 If the suite drifts out of date as the site evolves, either edit it directly
-(it's plain Playwright) or re-run webtest-agent to regenerate against the
+(it's plain Playwright) or re-run Anjalikastra to regenerate against the
 current site — the cache makes regeneration cheap for unchanged pages.

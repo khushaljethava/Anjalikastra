@@ -96,5 +96,5 @@ affected page/endpoint. Drafts are **queued for human review, never auto-filed**
 - **No auto-filing, no auto-fixing, no deploy gating.** The tool drafts; a human
   decides.
 - **v1 is public pages only.** Auth-gated flows are reported as not covered.
-  The authenticated-crawling design for v2 lives in `webtest_agent/discovery/auth.py`,
+  The authenticated-crawling design for v2 lives in `anjalikastra/discovery/auth.py`,
   and the coverage model already accounts for it.

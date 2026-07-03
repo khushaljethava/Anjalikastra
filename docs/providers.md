@@ -1,6 +1,6 @@
 # LLM Providers
 
-webtest-agent splits LLM work across two tiers so routine work stays cheap:
+Anjalikastra splits LLM work across two tiers so routine work stays cheap:
 
 | Tier | Used for | Default model |
 |---|---|---|
@@ -30,7 +30,7 @@ Two backends are supported natively, chosen with `--llm-provider` /
 
     ```bash
     export ANTHROPIC_API_KEY=sk-ant-...
-    webtest-agent https://example.com
+    Anjalikastra https://example.com
     ```
 
     Any Claude model ID your key can access works for either tier.
@@ -39,7 +39,7 @@ Two backends are supported natively, chosen with `--llm-provider` /
 
     ```bash
     export OPENAI_API_KEY=sk-...
-    webtest-agent https://example.com \
+    Anjalikastra https://example.com \
       --cheap-model gpt-5-mini --capable-model gpt-5
     ```
 
@@ -49,7 +49,7 @@ Two backends are supported natively, chosen with `--llm-provider` /
 
     ```bash
     export OPENAI_BASE_URL=http://localhost:11434/v1
-    webtest-agent https://example.com \
+    Anjalikastra https://example.com \
       --cheap-model llama3.2 --capable-model qwen2.5-coder:32b
     ```
 
@@ -60,7 +60,7 @@ Two backends are supported natively, chosen with `--llm-provider` /
     ```bash
     export OPENAI_BASE_URL=https://openrouter.ai/api/v1
     export OPENAI_API_KEY=sk-or-...
-    webtest-agent https://example.com \
+    Anjalikastra https://example.com \
       --cheap-model google/gemini-2.5-flash \
       --capable-model anthropic/claude-sonnet-4.5
     ```
@@ -72,7 +72,7 @@ Two backends are supported natively, chosen with `--llm-provider` /
     ```bash
     export OPENAI_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
     export OPENAI_API_KEY=your-gemini-api-key
-    webtest-agent https://example.com \
+    Anjalikastra https://example.com \
       --cheap-model gemini-2.5-flash --capable-model gemini-2.5-pro
     ```
 
@@ -84,7 +84,7 @@ Two backends are supported natively, chosen with `--llm-provider` /
     ```bash
     export OPENAI_BASE_URL=http://your-server:port/v1
     export OPENAI_API_KEY=key-if-your-server-checks-one
-    webtest-agent https://example.com --cheap-model <name> --capable-model <name>
+    Anjalikastra https://example.com --cheap-model <name> --capable-model <name>
     ```
 
 !!! warning "Model names must match your endpoint"

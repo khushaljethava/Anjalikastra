@@ -16,7 +16,7 @@ import logging
 from pathlib import Path
 from typing import Any
 
-logger = logging.getLogger("webtest_agent.checkpoint")
+logger = logging.getLogger("anjalikastra.checkpoint")
 
 
 class Checkpoint:

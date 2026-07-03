@@ -23,7 +23,7 @@ import os
 from dataclasses import dataclass, field
 from typing import Literal
 
-logger = logging.getLogger("webtest_agent.llm")
+logger = logging.getLogger("anjalikastra.llm")
 
 ModelTier = Literal["cheap", "capable"]
 

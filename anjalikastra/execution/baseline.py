@@ -19,7 +19,7 @@ from pathlib import Path
 
 from playwright.async_api import Page
 
-logger = logging.getLogger("webtest_agent.execution.baseline")
+logger = logging.getLogger("anjalikastra.execution.baseline")
 
 _VOLATILE_PATTERNS = [
     re.compile(r"\d{4}-\d{2}-\d{2}T[\d:.]+Z?"),  # ISO timestamps

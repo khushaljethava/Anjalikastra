@@ -1,6 +1,6 @@
-from webtest_agent.analysis.classify import PageClassification
-from webtest_agent.discovery.crawler import PageRecord
-from webtest_agent.generation.assertions import infer_page_assertions, slugify
+from anjalikastra.analysis.classify import PageClassification
+from anjalikastra.discovery.crawler import PageRecord
+from anjalikastra.generation.assertions import infer_page_assertions, slugify
 
 
 def test_infer_page_assertions_extracts_forms_and_required_fields():

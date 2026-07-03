@@ -13,7 +13,7 @@ import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 
-logger = logging.getLogger("webtest_agent.execution.runner")
+logger = logging.getLogger("anjalikastra.execution.runner")
 
 
 class RunnerError(RuntimeError):

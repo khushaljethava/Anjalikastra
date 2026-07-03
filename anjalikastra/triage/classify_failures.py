@@ -12,10 +12,10 @@ import logging
 import re
 from dataclasses import dataclass
 
-from webtest_agent.execution.runner import TestResult
-from webtest_agent.llm.client import LLMClient, LLMUnavailable
+from anjalikastra.execution.runner import TestResult
+from anjalikastra.llm.client import LLMClient, LLMUnavailable
 
-logger = logging.getLogger("webtest_agent.triage")
+logger = logging.getLogger("anjalikastra.triage")
 
 CLASSIFICATIONS = ["regression", "flake", "expected_change", "needs_human_review"]
 

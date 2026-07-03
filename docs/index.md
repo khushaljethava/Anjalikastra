@@ -1,8 +1,8 @@
-# webtest-agent
+# Anjalikastra
 
 **Point it at a URL. Get back a runnable Playwright E2E test suite and an honest report.**
 
-webtest-agent is an open-source CLI that tests live websites black-box — no access
+Anjalikastra is an open-source CLI that tests live websites black-box — no access
 to the target's source code, repo, or CI. It crawls from the URL you give it,
 figures out what to test, and produces two deliverables:
 
@@ -14,17 +14,17 @@ figures out what to test, and produces two deliverables:
 
 ```bash
 pip install -e .
-webtest-agent https://your-site.example
+Anjalikastra https://your-site.example
 ```
 
 !!! note "E2E tests, not unit tests"
     Unit tests require source access, and this tool never has that. Everything it
     emits is an **end-to-end / functional / smoke test** driven against the live site.
 
-## Why webtest-agent?
+## Why Anjalikastra?
 
 - **Zero setup on the target.** No SDK to install, no CI integration, no repo
-  access. If a browser can reach the site, webtest-agent can test it.
+  access. If a browser can reach the site, Anjalikastra can test it.
 - **The suite is yours to keep.** Generated tests are idiomatic Playwright —
   web-first assertions, no page-object bloat, no hand-rolled waits — and every
   file passes a minimal-code review gate before it ships. Edit them like

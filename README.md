@@ -1,4 +1,4 @@
-# webtest-agent
+# Anjalikastra
 
 An open-source CLI that points at a live website URL and produces:
 
@@ -105,7 +105,7 @@ next to *why*. There is no bare green checkmark implying full coverage.
 
 - Crawls and tests **public pages only**. Login-gated flows are not tested;
   they're reported as "not covered," never silently skipped or falsely passed.
-  See `webtest_agent/discovery/auth.py` for the v2 design.
+  See `anjalikastra/discovery/auth.py` for the v2 design.
 - No bot-detection evasion. If a target blocks the crawler, the tool tells you to
   allowlist its User-Agent on your own site rather than trying to get around it.
 - Nothing is auto-filed or auto-fixed. The tool drafts a bug list; a human decides.
@@ -209,6 +209,6 @@ pip install -e ".[dev]"
 pytest
 ```
 
-`webtest_agent/` is the Python orchestrator; it emits TypeScript/Playwright as
-output artifacts. See `webtest_agent/generation/review_gate.py` for the
+`anjalikastra/` is the Python orchestrator; it emits TypeScript/Playwright as
+output artifacts. See `anjalikastra/generation/review_gate.py` for the
 minimal-code discipline applied to every generated test file before it ships.

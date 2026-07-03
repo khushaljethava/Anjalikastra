@@ -1,6 +1,6 @@
 import pytest
 
-from webtest_agent.llm.client import LLMClient, LLMUnavailable, resolve_provider
+from anjalikastra.llm.client import LLMClient, LLMUnavailable, resolve_provider
 
 _LLM_ENV_VARS = ("WEBTEST_AGENT_LLM_PROVIDER", "ANTHROPIC_API_KEY", "OPENAI_API_KEY", "OPENAI_BASE_URL")
 

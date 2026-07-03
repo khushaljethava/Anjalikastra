@@ -1,10 +1,10 @@
 # CLI Reference
 
 ```
-webtest-agent <url> [options]
+Anjalikastra <url> [options]
 ```
 
-Also available as `python -m webtest_agent <url>`.
+Also available as `python -m anjalikastra <url>`.
 
 ## Arguments
 

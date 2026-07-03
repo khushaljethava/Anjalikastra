@@ -39,7 +39,7 @@ class Config:
     # Misc
     dry_run: bool = False
     verbose: bool = False
-    user_agent: str = "webtest-agent/0.1 (+https://github.com/webtest-agent/webtest-agent)"
+    user_agent: str = "Anjalikastra/0.1 (+https://github.com/Anjalikastra/Anjalikastra)"
 
     cache_dir: Path = field(init=False)
 
@@ -63,7 +63,7 @@ class Config:
     def resolved_llm_provider(self) -> str | None:
         """The provider a run would actually use ("anthropic"/"openai"), or None
         when nothing is configured and the heuristic fallback applies."""
-        from webtest_agent.llm.client import resolve_provider
+        from anjalikastra.llm.client import resolve_provider
 
         return resolve_provider(self.llm_provider)
 

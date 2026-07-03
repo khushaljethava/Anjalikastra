@@ -1,5 +1,5 @@
-from webtest_agent.discovery.crawler import CrawlResult, PageRecord
-from webtest_agent.reporting.coverage import build_coverage
+from anjalikastra.discovery.crawler import CrawlResult, PageRecord
+from anjalikastra.reporting.coverage import build_coverage
 
 
 def test_coverage_is_honest_about_unreached_pages():

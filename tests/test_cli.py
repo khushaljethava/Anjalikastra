@@ -1,6 +1,6 @@
 from typer.testing import CliRunner
 
-from webtest_agent.cli import app
+from anjalikastra.cli import app
 
 runner = CliRunner()
 

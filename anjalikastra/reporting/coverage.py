@@ -7,7 +7,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from webtest_agent.discovery.crawler import CrawlResult
+from anjalikastra.discovery.crawler import CrawlResult
 
 
 @dataclass
