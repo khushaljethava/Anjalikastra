@@ -1,4 +1,7 @@
-# How It Works
+---
+title: How It Works
+weight: 4
+---
 
 Everything is inferred from the live site — the tool treats every target as
 black-box. The pipeline is six stages, each feeding the next.

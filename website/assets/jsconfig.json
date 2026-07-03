@@ -1,0 +1,11 @@
+{
+ "compilerOptions": {
+  "paths": {
+   "*": [
+    "../../../../../../tmp/claude-1001/-home-khushal-raw-codes-Anjalikastra/a6898a8b-69cb-4546-8dc4-8e309482766d/scratchpad/hugocache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/assets/*",
+    "../../../../../../tmp/claude-1001/-home-khushal-raw-codes-Anjalikastra/a6898a8b-69cb-4546-8dc4-8e309482766d/scratchpad/hugocache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/blox/*",
+    "../../../../../../tmp/claude-1001/-home-khushal-raw-codes-Anjalikastra/a6898a8b-69cb-4546-8dc4-8e309482766d/scratchpad/hugocache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/blox/shared/js/*"
+   ]
+  }
+ }
+}

@@ -1,4 +1,7 @@
-# Reports & Generated Suite
+---
+title: Reports & Generated Suite
+weight: 5
+---
 
 Every run writes to `output/<run-id>/`:
 

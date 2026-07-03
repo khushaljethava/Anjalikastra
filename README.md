@@ -16,7 +16,7 @@ These are **end-to-end / functional / smoke tests**, not unit tests — unit tes
 require source access, and this tool never has that.
 
 **Full documentation:** https://khushaljethava.work/Anjalikastra/ (built
-from [`docs/`](docs/) — deploys automatically from `main`).
+from [`website/`](website/) with Hugo Blox — deploys automatically from `main`).
 
 ## Install
 

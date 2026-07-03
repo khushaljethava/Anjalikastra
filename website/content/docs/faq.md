@@ -1,4 +1,7 @@
-# FAQ
+---
+title: FAQ
+weight: 7
+---
 
 ## The crawler reaches zero pages. What's wrong?
 

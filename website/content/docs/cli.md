@@ -1,4 +1,7 @@
-# CLI Reference
+---
+title: CLI Reference
+weight: 2
+---
 
 ```
 Anjalikastra <url> [options]

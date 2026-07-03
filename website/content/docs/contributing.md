@@ -1,4 +1,7 @@
-# Contributing
+---
+title: Contributing
+weight: 8
+---
 
 ## Development setup
 

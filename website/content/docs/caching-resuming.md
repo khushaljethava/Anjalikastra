@@ -1,4 +1,7 @@
-# Caching & Resuming
+---
+title: Caching & Resuming
+weight: 6
+---
 
 Two independent mechanisms keep repeat runs fast, cheap, and gentle on the
 target site.
@@ -41,7 +44,8 @@ Combined with the content-hash cache, resuming is nearly free.
 When a run fails partway, the CLI prints the exact resume command, and the
 partial report notes it too.
 
-!!! tip "Crawl politeness is the point"
-    Both mechanisms exist for the same reason the throttle does: a testing tool
-    shouldn't hammer the site it's testing. Re-running because of a crash or an
-    unchanged page shouldn't cost the target anything.
+> [!NOTE]
+> **Crawl politeness is the point**
+> Both mechanisms exist for the same reason the throttle does: a testing tool
+> shouldn't hammer the site it's testing. Re-running because of a crash or an
+> unchanged page shouldn't cost the target anything.

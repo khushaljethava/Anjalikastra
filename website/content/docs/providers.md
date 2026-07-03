@@ -1,4 +1,7 @@
-# LLM Providers
+---
+title: LLM Providers
+weight: 3
+---
 
 Anjalikastra splits LLM work across two tiers so routine work stays cheap:
 
@@ -87,10 +90,11 @@ Two backends are supported natively, chosen with `--llm-provider` /
     Anjalikastra https://example.com --cheap-model <name> --capable-model <name>
     ```
 
-!!! warning "Model names must match your endpoint"
-    When using a non-Anthropic provider, pass model names your endpoint actually
-    serves. The CLI warns if you select `openai` but leave the Claude defaults
-    in place.
+> [!WARNING]
+> **Model names must match your endpoint**
+> When using a non-Anthropic provider, pass model names your endpoint actually
+> serves. The CLI warns if you select `openai` but leave the Claude defaults
+> in place.
 
 ## No key at all: heuristic mode
 
