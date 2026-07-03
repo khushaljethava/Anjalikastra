@@ -2,6 +2,8 @@
 
 **Point it at a URL. Get back a runnable Playwright E2E test suite and an honest report.**
 
+![Anjalikastra — crawl a site, get a passing test suite](assets/hero.png)
+
 Anjalikastra is an open-source CLI that tests live websites black-box — no access
 to the target's source code, repo, or CI. It crawls from the URL you give it,
 figures out what to test, and produces two deliverables:
@@ -13,8 +15,8 @@ figures out what to test, and produces two deliverables:
    run cleanly with a single command on first try.
 
 ```bash
-pip install -e .
-Anjalikastra https://your-site.example
+pip install anjalikastra
+anjalikastra https://your-site.example
 ```
 
 !!! note "E2E tests, not unit tests"

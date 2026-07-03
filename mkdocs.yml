@@ -1,6 +1,6 @@
 site_name: Anjalikastra
 site_description: Autonomous web testing agent — point it at a URL, get a runnable Playwright E2E suite and an honest coverage report.
-site_url: https://khushaljethava.github.io/Anjalikastra/
+site_url: https://khushaljethava.work/Anjalikastra/
 repo_url: https://github.com/khushaljethava/Anjalikastra
 repo_name: khushaljethava/Anjalikastra
 
@@ -21,11 +21,21 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  logo: assets/logo.png
+  favicon: assets/logo.png
   features:
+    - navigation.tabs
     - navigation.sections
+    - navigation.top
+    - navigation.instant
     - navigation.footer
+    - search.suggest
+    - search.highlight
     - content.code.copy
     - content.tabs.link
+
+plugins:
+  - search
 
 markdown_extensions:
   - admonition
