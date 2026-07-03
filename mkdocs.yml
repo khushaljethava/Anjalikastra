@@ -1,0 +1,49 @@
+site_name: webtest-agent
+site_description: Autonomous web testing agent — point it at a URL, get a runnable Playwright E2E suite and an honest coverage report.
+site_url: https://khushaljethava.github.io/Anjalikastra/
+repo_url: https://github.com/khushaljethava/Anjalikastra
+repo_name: khushaljethava/Anjalikastra
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - CLI Reference: cli.md
+  - LLM Providers: providers.md
+  - How It Works: how-it-works.md
+  - Reports & Generated Suite: output.md
+  - Caching & Resuming: caching-resuming.md
+  - FAQ: faq.md
+  - Contributing: contributing.md

@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Per-run outputs
+output/*
+!output/.gitkeep
+
+# MkDocs build output
+site/
+
+# Node artifacts inside emitted suites (kept out of the tool's own repo)
+node_modules/
+test-results/
+playwright-report/
+
+.env
+.DS_Store
