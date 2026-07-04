@@ -1,0 +1,15 @@
+{
+  "/docs/_index": "pages/docs/_index.js",
+  "/docs/caching-resuming": "pages/docs/caching-resuming.js",
+  "/docs/cli": "pages/docs/cli.js",
+  "/docs/contributing": "pages/docs/contributing.js",
+  "/docs/faq": "pages/docs/faq.js",
+  "/docs/getting-started": "pages/docs/getting-started.js",
+  "/docs/how-it-works": "pages/docs/how-it-works.js",
+  "/docs/output": "pages/docs/output.js",
+  "/docs/providers": "pages/docs/providers.js",
+  "/": "pages/index.js",
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
+}
