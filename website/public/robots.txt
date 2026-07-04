@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://khushaljethava.github.io/Anjalikastra/sitemap-index.xml

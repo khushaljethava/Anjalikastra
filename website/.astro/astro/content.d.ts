@@ -157,56 +157,63 @@ declare module 'astro:content' {
   slug: "caching-resuming";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "cli.md": {
 	id: "cli.md";
   slug: "cli";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "contributing.md": {
 	id: "contributing.md";
   slug: "contributing";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "faq.md": {
 	id: "faq.md";
   slug: "faq";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "getting-started.md": {
 	id: "getting-started.md";
   slug: "getting-started";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "how-it-works.md": {
 	id: "how-it-works.md";
   slug: "how-it-works";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"index.md": {
+	id: "index.md";
+  slug: "index";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "output.md": {
 	id: "output.md";
   slug: "output";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "providers.md": {
 	id: "providers.md";
   slug: "providers";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 };
 
@@ -218,5 +225,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }

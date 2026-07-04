@@ -15,8 +15,8 @@ live site, treating every target as black-box.
 These are **end-to-end / functional / smoke tests**, not unit tests — unit tests
 require source access, and this tool never has that.
 
-**Full documentation:** https://khushaljethava.work/Anjalikastra/ (built
-from [`website/`](website/) with Hugo Blox — deploys automatically from `main`).
+**Full documentation:** https://khushaljethava.github.io/Anjalikastra/ (built
+from [`website/`](website/) with Astro Starlight — deploys automatically from `main`).
 
 ## Install
 
